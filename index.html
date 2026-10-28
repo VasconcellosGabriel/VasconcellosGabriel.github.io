@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabriel Vasconcellos de Morais | Portfólio</title>
+<meta name="description" content="Portfólio de Gabriel Vasconcellos de Morais, estudante de Engenharia de Computação. Projetos em Python, JavaScript, SQL e desenvolvimento com IA generativa.">
+<meta property="og:title" content="Gabriel Vasconcellos de Morais | Portfólio">
+<meta property="og:description" content="Projetos em Python, JavaScript, SQL e desenvolvimento com IA generativa.">
+<meta property="og:image" content="img/jogo.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#topo" class="logo">gabriel<span>.</span>morais</a>
+    <nav aria-label="Seções">
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+
+  <section class="hero wrap">
+    <p class="eyebrow">Engenharia de Computação · UCL · conclusão em jul/2027</p>
+    <h1>Olá, eu sou o Gabriel.<br><span class="grad">Construo software com Python, JavaScript e IA.</span></h1>
+    <p class="lead">Uso ferramentas de IA generativa no dia a dia para desenvolver, depurar e automatizar. Com elas construí um jogo multiplayer completo e uma automação que reduziu de semanas para horas um processo no meu estágio na ArcelorMittal.</p>
+    <div class="ctas">
+      <a class="btn primario" href="#projetos">Ver projetos</a>
+      <a class="btn" href="https://github.com/VasconcellosGabriel" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/gabriel-vasconcellos-de-morais/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <ul class="numeros">
+      <li><b>semanas → horas</b><span>tempo do processo automatizado com Python no estágio</span></li>
+      <li><b>~4.000 linhas</b><span>de JavaScript puro no jogo multiplayer</span></li>
+      <li><b>20 etapas SQL</b><span>orquestradas por um DAG com checks de qualidade</span></li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="wrap secao">
+    <h2><span class="num">01</span> Projetos</h2>
+
+    <article class="projeto">
+      <a class="capa" href="https://vasconcellosgabriel.github.io/herois-de-pixel/" target="_blank" rel="noopener">
+        <img src="img/jogo.png" alt="Tela inicial do jogo Heróis de Pixel, com o herói em pixel art numa floresta" loading="lazy" width="1280" height="720">
+      </a>
+      <div class="info">
+        <p class="tipo">Jogo · 2026</p>
+        <h3>Heróis de Pixel</h3>
+        <p>Jogo de plataforma 2D em pixel art feito do zero, usando o Claude como par de programação. Roda no navegador do PC e do celular, sem instalar nada.</p>
+        <ul class="pontos">
+          <li>Cerca de 4.000 linhas de JavaScript puro, sem frameworks nem build</li>
+          <li>Multiplayer cooperativo para até 4 jogadores, com conexão P2P via WebRTC. O anfitrião sincroniza o estado do jogo 20 vezes por segundo</li>
+          <li>4 classes jogáveis, inimigos, chefe, fases geradas proceduralmente e criador de personagem</li>
+          <li>Instalável como app (PWA), com controles por toque, teclado e mouse</li>
+        </ul>
+        <ul class="tags"><li>JavaScript</li><li>HTML5 Canvas</li><li>WebRTC</li><li>PWA</li><li>Claude</li></ul>
+        <div class="links">
+          <a class="btn primario" href="https://vasconcellosgabriel.github.io/herois-de-pixel/" target="_blank" rel="noopener">▶ Jogar agora</a>
+          <a class="btn" href="https://github.com/VasconcellosGabriel/herois-de-pixel" target="_blank" rel="noopener">Código</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="projeto invertido">
+      <a class="capa" href="https://github.com/VasconcellosGabriel/pipeline-dados-dag" target="_blank" rel="noopener">
+        <img src="img/pipeline.png" alt="Visualização do DAG de execução do pipeline, com as etapas raw, staging e core conectadas" loading="lazy" width="1280" height="720">
+      </a>
+      <div class="info">
+        <p class="tipo">Engenharia de dados · 2026</p>
+        <h3>Pipeline de Dados Orquestrado por DAG</h3>
+        <p>Pipeline para um painel diário de vendas: os dados saem de arquivos CSV, passam por limpeza, validação e modelagem e terminam como indicadores publicados.</p>
+        <ul class="pontos">
+          <li>Orquestrador em Python que lê 20 transformações SQL, monta o grafo de dependências, detecta ciclos e define a ordem de execução (ordenação topológica)</li>
+          <li>6 camadas (raw, staging, qualidade, core, mart e publicação), com modelo dimensional e segmentação RFM de clientes</li>
+          <li>Checks de qualidade com quarentena de registros inválidos e reconciliação de receita: se algo falha, nenhum número inválido é publicado</li>
+          <li>Execuções idempotentes e transacionais, com testes automatizados e visualização interativa do DAG</li>
+        </ul>
+        <ul class="tags"><li>Python</li><li>SQL</li><li>SQLite</li><li>Data quality</li><li>unittest</li></ul>
+        <div class="links">
+          <a class="btn primario" href="https://github.com/VasconcellosGabriel/pipeline-dados-dag" target="_blank" rel="noopener">Ver código</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="projeto compacto">
+      <div class="info">
+        <p class="tipo">Automação · ArcelorMittal</p>
+        <h3>Automação do Inventário de Drivers</h3>
+        <p>Script em Python, desenvolvido com o GitHub Copilot, que gera a base de dados (.csv) com as versões de drivers das máquinas da empresa. Um processo que levava semanas passou a ser feito em poucas horas.</p>
+        <ul class="tags"><li>Python</li><li>GitHub Copilot</li><li>Automação</li></ul>
+        <p class="nota">Código interno da empresa, por isso não está publicado.</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="experiencia" class="wrap secao">
+    <h2><span class="num">02</span> Experiência e formação</h2>
+    <ol class="linha-tempo">
+      <li>
+        <p class="quando">abr/2025 – dez/2026</p>
+        <h3>Estagiário de Infraestrutura de TI · ArcelorMittal</h3>
+        <ul class="pontos">
+          <li>Automação em Python para gerar a base de versões de drivers das máquinas: de semanas para poucas horas</li>
+          <li>Fluxos automatizados com Power Automate, Power Apps e Microsoft Copilot</li>
+          <li>Dashboards em Power BI e relatórios em Excel avançado para acompanhar indicadores da área</li>
+          <li>Diagnóstico de redes e infraestrutura e um site em HTML e CSS para apresentar as entregas do estágio</li>
+        </ul>
+      </li>
+      <li>
+        <p class="quando">2021 – jul/2027 (previsão)</p>
+        <h3>Bacharelado em Engenharia de Computação · UCL</h3>
+        <p>Universidade do Centro-Leste, Serra, ES.</p>
+      </li>
+      <li>
+        <p class="quando">2018 – 2020</p>
+        <h3>Técnico em Automação Industrial · CEDTEC</h3>
+        <p>Escola Técnica CEDTEC, Serra, ES.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="habilidades" class="wrap secao">
+    <h2><span class="num">03</span> Habilidades</h2>
+    <div class="grupos">
+      <div><h3>Linguagens</h3><ul class="tags"><li>Python</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li><li>C</li><li>C++</li><li>C#</li><li>PowerShell</li></ul></div>
+      <div><h3>IA generativa</h3><ul class="tags"><li>Claude</li><li>Gemini</li><li>GitHub Copilot</li><li>Microsoft Copilot</li><li>Engenharia de prompt</li></ul></div>
+      <div><h3>Dados</h3><ul class="tags"><li>Análise de dados</li><li>Pipelines ETL</li><li>Modelagem dimensional</li><li>Data quality</li><li>SQLite</li><li>Power BI</li><li>Excel avançado</li></ul></div>
+      <div><h3>Ferramentas</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Node.js</li><li>WebRTC</li><li>PWA</li><li>Power Automate</li><li>Power Apps</li></ul></div>
+    </div>
+    <p class="idiomas"><b>Idiomas:</b> português nativo · inglês intermediário-avançado (B2)</p>
+  </section>
+
+  <section id="contato" class="wrap secao contato">
+    <h2><span class="num">04</span> Contato</h2>
+    <p class="lead">Estou procurando estágio na área de desenvolvimento com IA. Vamos conversar?</p>
+    <div class="ctas">
+      <a class="btn primario" href="mailto:gabriel2003morais@hotmail.com">gabriel2003morais@hotmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/gabriel-vasconcellos-de-morais/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/VasconcellosGabriel" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap rodape">
+  <p>Gabriel Vasconcellos de Morais · Serra, ES · 2026</p>
+</footer>
+
+</body>
+</html>
