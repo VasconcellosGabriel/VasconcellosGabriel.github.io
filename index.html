@@ -7,7 +7,7 @@
 <meta name="description" content="Portfólio de Gabriel Vasconcellos de Morais, estudante de Engenharia de Computação. Projetos em Python, JavaScript, SQL e desenvolvimento com IA generativa.">
 <meta property="og:title" content="Gabriel Vasconcellos de Morais | Portfólio">
 <meta property="og:description" content="Projetos em Python, JavaScript, SQL e desenvolvimento com IA generativa.">
-<meta property="og:image" content="img/jogo.png">
+<meta property="og:image" content="img/jogo-herois.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
@@ -56,24 +56,34 @@
 
     <article class="projeto">
       <a class="capa" href="https://vasconcellosgabriel.github.io/herois-de-pixel/" target="_blank" rel="noopener">
-        <img src="img/jogo.png" alt="Tela inicial do jogo Heróis de Pixel, com o herói em pixel art numa floresta" loading="lazy" width="1280" height="720">
+        <img src="img/jogo-herois.jpg" alt="As 4 classes do jogo Heróis de Pixel em pixel art: guerreiro, maga, arqueiro e dragônico numa floresta" width="1280" height="720">
       </a>
       <div class="info">
-        <p class="tipo">Jogo · 2026</p>
+        <p class="tipo">Jogo · 2026 · em desenvolvimento contínuo</p>
         <h3>Heróis de Pixel</h3>
-        <p>Jogo de plataforma 2D em pixel art feito do zero com vibe coding no Claude Code. A primeira versão jogável ficou pronta em 2 horas. Roda no navegador do PC e do celular, sem instalar nada.</p>
+        <p>Jogo de plataforma 2D em pixel art feito do zero com vibe coding no Claude Code. A primeira versão jogável ficou pronta em 2 horas e o jogo seguiu crescendo: hoje são 30 fases em 7 mundos, cada um com o próprio chefe. Roda no navegador do PC e do celular, sem instalar nada.</p>
         <ul class="pontos">
-          <li>Cerca de 4.000 linhas de JavaScript puro, sem frameworks nem build</li>
-          <li>Multiplayer cooperativo para até 4 jogadores, com conexão P2P via WebRTC. O anfitrião sincroniza o estado do jogo 20 vezes por segundo</li>
-          <li>4 classes jogáveis, inimigos, chefe, fases geradas proceduralmente e criador de personagem</li>
-          <li>Instalável como app (PWA), com controles por toque, teclado e mouse</li>
+          <li>Mais de 10 mil linhas de JavaScript puro, sem frameworks nem build, construídas ao longo de 36 commits</li>
+          <li>Multiplayer online para até 4 jogadores via WebRTC (P2P, sem servidor próprio): o anfitrião simula o mundo e envia o estado 30 vezes por segundo, e cada convidado prevê o próprio herói para andar sem atraso</li>
+          <li>Multiplayer local para até 4 na mesma tela, com controles (gamepad) configuráveis</li>
+          <li>4 classes com árvore de evolução, 7 chefes com padrões de ataque próprios e inimigos que acham o caminho até o herói</li>
+          <li>Criador de personagem com sprites PNG em camadas recoloridas em tempo real, mapa do mundo e músicas sintetizadas no navegador</li>
+          <li>Instalável como app (PWA) e versão Android com Capacitor em testes</li>
         </ul>
-        <ul class="tags"><li>JavaScript</li><li>HTML5 Canvas</li><li>WebRTC</li><li>PWA</li><li>Claude Code</li></ul>
+        <ul class="tags"><li>JavaScript</li><li>HTML5 Canvas</li><li>WebRTC</li><li>Web Audio</li><li>PWA</li><li>Capacitor</li><li>Claude Code</li></ul>
         <div class="links">
           <a class="btn primario" href="https://vasconcellosgabriel.github.io/herois-de-pixel/" target="_blank" rel="noopener">▶ Jogar agora</a>
           <a class="btn" href="https://github.com/VasconcellosGabriel/herois-de-pixel" target="_blank" rel="noopener">Código</a>
         </div>
       </div>
+      <ul class="galeria" aria-label="Capturas de tela do Heróis de Pixel">
+        <li><button type="button"><img src="img/jogo-mapa.png" alt="Mapa do mundo com a trilha de fases do Reino Verde e dos Picos Gelados" loading="lazy" width="1280" height="720"></button></li>
+        <li><button type="button"><img src="img/jogo-golem.png" alt="Maga enfrentando o chefe Rei Golem numa arena vulcânica" loading="lazy" width="1280" height="720"></button></li>
+        <li><button type="button"><img src="img/jogo-yeti.png" alt="Guerreiro enfrentando o chefe Yeti Ancião numa caverna de gelo" loading="lazy" width="1280" height="720"></button></li>
+        <li><button type="button"><img src="img/jogo-floresta.png" alt="Guerreiro na fase da floresta, com moedas, caixas e uma planta carnívora" loading="lazy" width="1280" height="720"></button></li>
+        <li><button type="button"><img src="img/jogo-neve.png" alt="Arqueiro diante de um lobo das neves no Bosque Outonal" loading="lazy" width="1280" height="720"></button></li>
+        <li><button type="button"><img src="img/jogo-castelo.png" alt="Maga lançando magia de veneno contra um fantasma no castelo do vampiro" loading="lazy" width="1280" height="720"></button></li>
+      </ul>
     </article>
 
     <article class="projeto invertido">
@@ -94,6 +104,25 @@
         <div class="links">
           <a class="btn primario" href="https://github.com/VasconcellosGabriel/pipeline-dados-dag" target="_blank" rel="noopener">Ver código</a>
         </div>
+      </div>
+    </article>
+
+    <article class="projeto">
+      <div class="capa">
+        <img src="img/financas.png" alt="Resumo mensal e gráfico de gastos por categoria do Gestor Finanças, com dados fictícios" loading="lazy" width="1312" height="1024">
+      </div>
+      <div class="info">
+        <p class="tipo">App web · projeto pessoal · 2026</p>
+        <h3>Gestor Finanças</h3>
+        <p>App de finanças pessoais local-first: importa os extratos do banco e mostra para onde o dinheiro foi, sem que nenhum dado financeiro saia do aparelho.</p>
+        <ul class="pontos">
+          <li>Importa CSV do Nubank (conta e fatura do cartão), detecta o tipo de arquivo sozinho e não duplica lançamentos ao reimportar</li>
+          <li>Classifica receitas, despesas, transferências entre contas próprias, pagamentos de fatura, investimentos e estornos</li>
+          <li>Categorização automática que aprende: corrigir uma categoria cria uma regra para os lançamentos equivalentes e futuros</li>
+          <li>Dados no IndexedDB, backup com criptografia opcional (AES-GCM + PBKDF2) e testes automatizados com Vitest</li>
+        </ul>
+        <ul class="tags"><li>TypeScript</li><li>Vite</li><li>IndexedDB</li><li>Web Crypto</li><li>PWA</li><li>Vitest</li></ul>
+        <p class="nota">Repositório privado. A imagem usa dados fictícios.</p>
       </div>
     </article>
 
@@ -137,10 +166,10 @@
   <section id="habilidades" class="wrap secao">
     <h2><span class="num">03</span> Habilidades</h2>
     <div class="grupos">
-      <div><h3>Linguagens</h3><ul class="tags"><li>Python</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li><li>C</li><li>C++</li><li>C#</li><li>PowerShell</li></ul></div>
+      <div><h3>Linguagens</h3><ul class="tags"><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>HTML</li><li>CSS</li><li>C</li><li>C++</li><li>C#</li><li>PowerShell</li></ul></div>
       <div><h3>IA generativa e automação</h3><ul class="tags"><li>Claude Code (vibe coding)</li><li>Claude</li><li>Gemini</li><li>GitHub Copilot</li><li>Microsoft Copilot</li><li>Engenharia de prompt</li><li>Power Automate</li><li>Power Apps</li></ul></div>
       <div><h3>Dados</h3><ul class="tags"><li>Análise de dados</li><li>Pipelines ETL</li><li>Modelagem dimensional</li><li>Data quality</li><li>SQLite</li><li>Power BI</li><li>Excel avançado</li></ul></div>
-      <div><h3>Ferramentas</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Node.js</li><li>WebRTC</li><li>PWA</li></ul></div>
+      <div><h3>Ferramentas</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Node.js</li><li>Vite</li><li>WebRTC</li><li>PWA</li><li>Capacitor (Android)</li></ul></div>
     </div>
     <p class="idiomas"><b>Idiomas:</b> português nativo · inglês intermediário-avançado (B2)</p>
   </section>
@@ -160,6 +189,24 @@
 <footer class="wrap rodape">
   <p>Gabriel Vasconcellos de Morais · Serra, ES · 2026</p>
 </footer>
+
+<dialog id="zoom" aria-label="Imagem ampliada">
+  <img src="" alt="">
+  <p></p>
+  <button type="button" class="fechar" aria-label="Fechar">✕</button>
+</dialog>
+
+<script>
+  // Galeria: abre a captura clicada em tamanho grande; fecha com ✕, Esc ou clique fora da imagem
+  const zoom = document.getElementById('zoom');
+  const zImg = zoom.querySelector('img'), zTxt = zoom.querySelector('p');
+  document.querySelectorAll('.galeria button').forEach(b => b.addEventListener('click', () => {
+    const img = b.querySelector('img');
+    zImg.src = img.src; zImg.alt = img.alt; zTxt.textContent = img.alt;
+    zoom.showModal();
+  }));
+  zoom.addEventListener('click', e => { if (e.target !== zImg) zoom.close(); });
+</script>
 
 </body>
 </html>
